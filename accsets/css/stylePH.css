@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  color: #ffd700;
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-envelope {
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.fa-xmark {
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+#contentDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(247 255 247);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.2);
+  z-index: 1001;
+  display: flex;
+  gap: 20px;
+  width: 57%;
+  height: 55%;
+}
+
+#contentDiv.hidden {
+  display: none;
+}
+
+#leftDiv {
+  width: 40%;
+  text-align: center;
+}
+
+#leftDiv img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#rightDiv {
+  flex: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 60, 60, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* CSS for text animation */
+.birthday {
+  display: inline-block;
+  opacity: 0;
+  animation: appear 0.5s forwards;
+}
+
+#message .birthday {
+  animation-delay: 1s; /* Delay for Happy Birthday */
+}
+
+.text__letter span {
+  display: inline-block;
+  opacity: 0;
+  margin-right: 2px; /* Thêm khoảng cách giữa các phần tử span */
+  animation: appear 0.5s forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

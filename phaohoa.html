@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pháo hoa</title>
+    <link rel="stylesheet" href="./accsets/css/stylePH.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="message" class="hidden">
+      <div class="hpd">
+        <h1 class="birthday">
+          <span style="--t: 0s">H</span>
+          <span style="--t: 0s">a</span>
+          <span style="--t: 0s">p</span>
+          <span style="--t: 0">p</span>
+          <span style="--t: 0">y</span>
+          <span style="--t: 0">B</span>
+          <span style="--t: 0">i</span>
+          <span style="--t: 0s">r</span>
+          <span style="--t: 0s">t</span>
+          <span style="--t: 0s">h</span>
+          <span style="--t: 0s">d</span>
+          <span style="--t: 0s">a</span>
+          <span style="--t: 0s">y</span>
+        </h1>
+      </div>
+      <div class="cls">
+        <i class="fa-regular fa-envelope" id="envelopeIcon"></i>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div id="contentDiv" class="hidden">
+      <i class="fa-solid fa-xmark" id="closeIcon"></i>
+      <div id="leftDiv">
+        <img
+          src="./accsets/img/z6194083078037_04b3bbbda54fce7411f0fcc7be580ab5.jpg"
+          alt="Ảnh sinh nhật"
+        />
+      </div>
+      <div id="rightDiv">
+        <h1 class="birthday">Chúc mừng sinh nhật!</h1>
+        <p class="birthday text__letter"></p>
+      </div>
+    </div>
+    <script src="./accsets/js/scriptPH.js"></script>
+  </body>
+</html>

@@ -61,6 +61,7 @@ canvas {
 #leftDiv {
   width: 40%;
   text-align: center;
+  align-self: center;
 }
 
 #leftDiv img {
